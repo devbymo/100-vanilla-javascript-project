@@ -26,7 +26,7 @@ const displayNewQuote = (connection = 'offline') => {
   }
 
   // Decrease the font if the quote text is large.
-  if (newQuote.text.length >= 120) {
+  if (newQuote.text.length >= 100) {
     quoteText.classList.add('quote__text-long');
   } else {
     quoteText.classList.remove('quote__text-long');
