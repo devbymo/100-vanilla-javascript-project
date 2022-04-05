@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link
       rel="stylesheet"
@@ -12,7 +12,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="quote-container">
+      <div class="quote">
+        <!-- ICON -->
+        <i class="fas fa-quote-left quote-icon"></i>
+        <!-- TEXT -->
+        <span class="quote__text"
+          >Difficulties increase the nearer we get to the goal, increase the
+          nearer we get to the goal.</span
+        >
+      </div>
+      <!-- AUTHOR -->
+      <div class="quote-author">
+        <span class="author"> Mo Yasser </span>
+      </div>
+      <!-- BUTTONS -->
+      <div class="button-container">
+        <!-- TWITTER -->
+        <a href="#" class="btn btn-twitter" title="Tweet This!">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- NEW QUOTE -->
+        <a href="#" class="btn btn-new-quote" title="Fetch new quote"
+          >New Quote</a
+        >
+      </div>
+    </div>
+    <!-- LOADER SPINER -->
+    <div class="loader"></div>
     <!-- Script -->
+    <script src="quotes.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
