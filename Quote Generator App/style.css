@@ -35,7 +35,7 @@ body {
 
 .quote-container {
   width: auto;
-  min-width: 80rem;
+  /* min-width: 80rem; */
   max-width: 90rem;
   padding: 3rem 4rem;
   background-color: #bef264;
@@ -111,5 +111,19 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 72rem) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+  }
+
+  .quote__text-long {
+    font-size: 1.5rem;
   }
 }
