@@ -87,12 +87,10 @@ const hideLoadingSpiner = () => {
 
 const showErrorMessage = () => {
   errorContainer.hidden = false;
-  quoteContainer.hidden = true;
 };
 
 const hideErrorMessage = () => {
   errorContainer.hidden = true;
-  quoteContainer.hidden = false;
 };
 // On load.
 fetchQuote();
