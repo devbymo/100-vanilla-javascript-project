@@ -9,6 +9,7 @@ const author = document.querySelector('.author');
 const newQuoteBtn = document.querySelector('.btn-new-quote');
 const twitterBtn = document.querySelector('.btn-twitter');
 const loaderSpiner = document.querySelector('.loader');
+const errorContainer = document.querySelector('.error-container');
 
 let apiQuotes = [];
 
@@ -38,6 +39,9 @@ const displayNewQuote = (connection = 'offline') => {
 };
 
 const fetchQuote = async () => {
+  // Hide error.
+  hideErrorMessage();
+
   // For free APIs CORS issue.
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const apiURL = 'https://type.fit/api/quotes';
@@ -57,8 +61,10 @@ const fetchQuote = async () => {
     displayNewQuote('online');
   } catch (err) {
     // Display UI [local data]
-    displayNewQuote('offline');
-    console.log(err.message);
+    // displayNewQuote('offline');
+    console.log(err);
+    hideLoadingSpiner();
+    showErrorMessage();
   }
 };
 
@@ -79,8 +85,19 @@ const hideLoadingSpiner = () => {
   quoteContainer.hidden = false;
 };
 
+const showErrorMessage = () => {
+  errorContainer.hidden = false;
+  quoteContainer.hidden = true;
+};
+
+const hideErrorMessage = () => {
+  errorContainer.hidden = true;
+  quoteContainer.hidden = false;
+};
 // On load.
 fetchQuote();
+hideErrorMessage();
+hideLoadingSpiner();
 
 // New quote event handler.
 newQuoteBtn.addEventListener('click', (e) => {
