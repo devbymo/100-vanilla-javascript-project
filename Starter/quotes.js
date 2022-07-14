@@ -1,9 +1,5 @@
 const localQuotes = [
   {
-    text: 'You can observe a lot just by watching.',
-    author: 'Yogi Berra',
-  },
-  {
     text: 'A house divided against itself cannot stand.',
     author: 'Abraham Lincoln',
   },
