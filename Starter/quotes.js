@@ -1,9 +1,5 @@
 const localQuotes = [
   {
-    text: 'Difficulties increase the nearer we get to the goal.',
-    author: 'Johann Wolfgang von Goethe',
-  },
-  {
     text: 'Fate is in your hands and no one elses',
     author: 'Byron Pulsifer',
   },
