@@ -1,9 +1,5 @@
 const localQuotes = [
   {
-    text: 'Fate is in your hands and no one elses',
-    author: 'Byron Pulsifer',
-  },
-  {
     text: 'Be the chief but never the lord.',
     author: 'Lao Tzu',
   },
